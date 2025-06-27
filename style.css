@@ -905,40 +905,55 @@ footer a i {
   #menu-icon {
     display: block;
     transition: all 0.4s linear;
+    z-index: 1001;
+    position: relative;
   }
 
   #menu-icon.bx-x {
     transform: rotate(-180deg);
   }
 
-   .navbar {
-    position: absolute;
-    top: 100%;
+  .navbar {
+    position: fixed;
+    top: 0;
     left: 0;
+    height: 100vh;
     width: 100%;
-    background: #1c002c;
+    background: black;
     display: none;
-    padding: 10px 5%;
-  }
-
-  .navbar.open {
-    display: block;
-  }
-
-  .navbar ul {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
     padding: 0;
   }
 
+  .navbar.open {
+    display: flex;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
   .navbar ul li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+    border: none;
   }
 
   .navbar ul li a {
-    display: block;
-    padding: 15px 10px;
-    font-size: 1.1rem;
+    font-size: 20px;
+    color: rgb(192, 197, 197);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .navbar ul li a:hover {
+    color: rgb(33, 124, 81);
   }
 
   .home {
@@ -946,9 +961,8 @@ footer a i {
     text-align: center;
   }
 
-
   .glow-ring {
-    margin-top: -40px; /* move image upward */
+    margin-top: -40px;
     width: 250px;
     height: 250px;
     display: flex;
