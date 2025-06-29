@@ -418,7 +418,8 @@ header ul li a.active {
   text-underline-offset: 10px;
   text-decoration-thickness: 3px;
   margin-bottom: 40px;
-  font-size: 28px;
+  font-size: 25px;
+  padding-top: -10px;
 }
 
 .bar {
@@ -431,6 +432,9 @@ header ul li a.active {
 
 .technical-bars .bar .info {
   margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between icon and text */
 }
 
 .technical-bars .bar .info span {
@@ -1019,8 +1023,8 @@ footer a i {
   position: fixed;
   top: 0;
   left: 0;
-  height: 4px;
-  background: 	rgb(48, 189, 158);
+  height: 2px;
+  background: 	rgb(45, 197, 164);
   width: 0%;
   z-index: 9999;
   box-shadow: 0 0 10px aquamarine, 0 0 20px #0b3f30, 0 0 40px aquamarine, 0 0 50px aquamarine;
