@@ -71,7 +71,8 @@ header ul li a.active {
   font-weight: 600;
   cursor: default;
   opacity: 0;
-  animation: slideRight 1s ease forwards;
+  animation: slideRight 1s ease forwards
+  ;
 }
 
 /* Navigation */
@@ -336,7 +337,7 @@ header ul li a.active {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 2rem
 }
 
 .services-list div {
@@ -392,15 +393,7 @@ header ul li a.active {
 }
 
 /* Skills-------------------------------------------------------------------------------------------- */
-.sub-title1 {
-  text-align: center;
-  font-size: 50px;
-  padding-bottom: -30px;
-  padding-top: 70px;
-}
-.sub-title1 span {
-  color: #0ef;
-}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -425,7 +418,7 @@ header ul li a.active {
   text-underline-offset: 10px;
   text-decoration-thickness: 3px;
   margin-bottom: 40px;
-  font-size: 25px;
+  font-size: 28px;
 }
 
 .bar {
@@ -438,9 +431,6 @@ header ul li a.active {
 
 .technical-bars .bar .info {
   margin-bottom: 6px;
-  display: flex;
-  align-items: center;
-  gap: 10px; /* space between icon and text */
 }
 
 .technical-bars .bar .info span {
@@ -953,20 +943,24 @@ footer a i {
   .navbar ul li {
     margin: 20px 0;
     border: none;
+    
   }
 
   .navbar ul li a {
     font-size: 20px;
-    color: white;
+    color: 	white;
     text-decoration: none;
     transition: color 0.3s ease;
+    
   }
 
   .navbar ul li a:hover {
     color: rgb(33, 124, 81);
-    text-shadow: 0 0 25px #105652, 0 0 50px #0b3f30;
+    text-shadow: 0 0 25px	#105652,
+                  0 0 50px #0b3f30;
   }
 
+  
   .home {
     flex-direction: column;
     text-align: center;
@@ -1016,7 +1010,7 @@ footer a i {
     display: flex;
     flex-wrap: wrap;
   }
-  #scroll-line {
+   #scroll-line {
     display: block;
   }
 }
@@ -1025,11 +1019,10 @@ footer a i {
   position: fixed;
   top: 0;
   left: 0;
-  height: 2px;
-  background: rgb(45, 197, 164);
+  height: 4px;
+  background: 	rgb(48, 189, 158);
   width: 0%;
   z-index: 9999;
-  box-shadow: 0 0 10px aquamarine, 0 0 20px #0b3f30, 0 0 40px aquamarine,
-    0 0 50px aquamarine;
+  box-shadow: 0 0 10px aquamarine, 0 0 20px #0b3f30, 0 0 40px aquamarine, 0 0 50px aquamarine;
   transition: width 0.25s linear;
 }
