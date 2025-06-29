@@ -71,8 +71,7 @@ header ul li a.active {
   font-weight: 600;
   cursor: default;
   opacity: 0;
-  animation: slideRight 1s ease forwards
-  ;
+  animation: slideRight 1s ease forwards;
 }
 
 /* Navigation */
@@ -337,7 +336,7 @@ header ul li a.active {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin-top: 2rem
+  margin-top: 2rem;
 }
 
 .services-list div {
@@ -393,7 +392,15 @@ header ul li a.active {
 }
 
 /* Skills-------------------------------------------------------------------------------------------- */
-
+.sub-title1 {
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: -30px;
+  padding-top: 70px;
+}
+.sub-title1 span {
+  color: #0ef;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -418,7 +425,7 @@ header ul li a.active {
   text-underline-offset: 10px;
   text-decoration-thickness: 3px;
   margin-bottom: 40px;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 .bar {
@@ -431,6 +438,9 @@ header ul li a.active {
 
 .technical-bars .bar .info {
   margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between icon and text */
 }
 
 .technical-bars .bar .info span {
@@ -947,13 +957,14 @@ footer a i {
 
   .navbar ul li a {
     font-size: 20px;
-    color: rgb(192, 197, 197);
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
   }
 
   .navbar ul li a:hover {
     color: rgb(33, 124, 81);
+    text-shadow: 0 0 25px #105652, 0 0 50px #0b3f30;
   }
 
   .home {
@@ -1005,4 +1016,20 @@ footer a i {
     display: flex;
     flex-wrap: wrap;
   }
+  #scroll-line {
+    display: block;
+  }
+}
+
+#scroll-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: rgb(45, 197, 164);
+  width: 0%;
+  z-index: 9999;
+  box-shadow: 0 0 10px aquamarine, 0 0 20px #0b3f30, 0 0 40px aquamarine,
+    0 0 50px aquamarine;
+  transition: width 0.25s linear;
 }
