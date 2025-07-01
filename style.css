@@ -343,19 +343,27 @@ header ul li a.active {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin-top: 2rem
+  margin-top: 2rem;
+  padding: 0 1rem;
 }
 
 .services-list div {
-  flex: 1 1 18rem;
   background-color: transparent;
-  padding: 1rem 2rem 1rem;
-  font-size: 14px;
-  font-weight: 13px;
-  border-right: 10px;
+  padding: 1.5rem;
+  width: 300px; /* consistent size */
+  height: 350px;
   border-radius: 20px;
   transition: background 0.5s, transform 0.5s;
   box-shadow: 1px 1px 20px powderblue, 1px 1px 40px #0053b8f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.services-list div:hover {
+  transform: scale(1.05);
+  background: rgba(0, 255, 255, 0.05);
 }
 
 .services-list div i {
@@ -375,7 +383,6 @@ header ul li a.active {
   margin-top: 20px;
   display: inline-block;
 }
-
 .read {
   display: inline-block;
   padding: 12px 20px;
