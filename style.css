@@ -1015,9 +1015,10 @@ footer a i {
   top: 0;
   left: 0;
   height: 2px;
-  background: 	rgb(45, 197, 164);
+  background: rgb(45, 197, 164);
   width: 0%;
   z-index: 9999;
   box-shadow: 0 0 10px aquamarine, 0 0 20px #0b3f30, 0 0 40px aquamarine, 0 0 50px aquamarine;
   transition: width 0.25s linear;
 }
+
