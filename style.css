@@ -371,8 +371,8 @@ header ul li a.active {
 
 @media (max-width: 768px) {
   .services-list div {
-    width: 90%;
-    height: auto;
+    width: 600px; /* consistent size */
+    height: 350px;
   }
 }
 
