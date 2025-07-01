@@ -1,10 +1,43 @@
-var typed = new Typed(".text", {
-  strings: ["Frontend Developer", "SQL Developer", "Java Developer"],
-  typeSpeed: 100,
-  backSpeed: 100,
-  backDelay: 1000,
-  loop: true,
-});
+// var typed = new Typed(".text", {
+//   strings: ["Frontend Developer", "SQL Developer", "Java Developer"],
+//   typeSpeed: 100,
+//   backSpeed: 100,
+//   backDelay: 1000,
+//   loop: true,
+// });
+
+const phrases3 = ["Frontend Developer", "SQL Developer", "Java Developer"];
+let chars = "!<>-_\\/[]{}—=+*^?#____^#*$&#$^____";
+let part = "";
+let scrambleEl = document.querySelector(".text");
+let phraseIndex = 0;
+let counter = 0;
+
+function scrambleEffect() {
+  let phrase = phrases3[phraseIndex];
+  let scrambled = phrase.split("").map((char, i) => {
+    if (counter > i) return phrase[i];
+    return chars[Math.floor(Math.random() * chars.length)];
+  }).join("");
+
+  scrambleEl.textContent = scrambled;
+  counter++;
+
+  if (counter <= phrase.length) {
+    requestAnimationFrame(scrambleEffect);
+  } else {
+    setTimeout(() => {
+      counter = 0;
+      phraseIndex = (phraseIndex + 1) % phrases3.length;
+      scrambleEffect();
+    }, 4000);
+  }
+}
+
+scrambleEffect();
+
+
+
 
 //circle skills//////////////////////////////////////////////////////
 
