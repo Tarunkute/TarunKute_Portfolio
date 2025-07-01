@@ -369,13 +369,13 @@ header ul li a.active {
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .services-list div {
     width: 90%;
     height: auto;
   }
 }
-
+ */
 
 .read {
   display: inline-block;
