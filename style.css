@@ -345,21 +345,37 @@ header ul li a.active {
 
 .services-list div i {
   font-size: 50px;
-  margin-bottom: 30px;
-  align-items: center;
+  margin-bottom: 20px;
+  color: #00eeff;
 }
+
 .services-list div h2 {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 600;
   margin-bottom: 15px;
 }
+
+.services-list div p {
+  font-size: 14px;
+  flex-grow: 1; /* fills vertical space */
+}
+
 .services-list div a {
   text-decoration: none;
-  color: #000;
-  font-size: 12px;
+  background-color: #00eeff;
+  font-size: 14px;
   margin-top: 20px;
   display: inline-block;
+  font-weight: 500;
 }
+
+@media (max-width: 768px) {
+  .services-list div {
+    width: 90%;
+    height: auto;
+  }
+}
+
 
 .read {
   display: inline-block;
@@ -931,11 +947,11 @@ footer a i {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: center; /* 👈 Add this line */
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 100%;
+  height: 100%; /* 👈 This ensures vertical centering */
 }
 
 .navbar ul li {
@@ -1015,7 +1031,7 @@ footer a i {
   top: 0;
   left: 0;
   height: 2px;
-  background: rgb(45, 197, 164);
+  background: 	rgb(45, 197, 164);
   width: 0%;
   z-index: 9999;
   box-shadow: 0 0 10px aquamarine, 0 0 20px #0b3f30, 0 0 40px aquamarine, 0 0 50px aquamarine;
